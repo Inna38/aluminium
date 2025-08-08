@@ -2,8 +2,19 @@ import Image from "next/image";
 import { products } from "../../../../../public/json_products/json";
 import ProductCard from "@/components/ProductCard/ProductCard";
 
+// export async function generateStaticParams() {
+//   return products.map((product) => ({ slug: product.slug }));
+// }
+
 export async function generateStaticParams() {
-  return products.map((product) => ({ slug: product.slug }));
+  const locales = ["ua", "en"]; 
+
+  return products.flatMap((product) =>
+    locales.map((locale) => ({
+      locale,
+      slug: product.slug,
+    }))
+  );
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

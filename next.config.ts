@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
     defaultLocale: "ua",
     localeDetection: false,
   },
+  env: {
+    NEXT_PUBLIC_GOOGLE_MAPS_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY,
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();

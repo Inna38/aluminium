@@ -11,9 +11,13 @@ const center = {
 };
 
 export default function MyGoogleMap() {
+    console.log(
+      "process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ",
+      process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY
+    );
     
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY!}>
+    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || ""}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={14}>
         <Marker position={center} />
       </GoogleMap>

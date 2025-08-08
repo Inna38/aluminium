@@ -1,0 +1,244 @@
+.productsPage_container{
+    margin-top: -140px;
+    margin-bottom: 90px;
+}
+
+
+/* .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  max-width: 340px;
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper {
+  position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+} */
+
+/* 🔍 Иконка */
+/* .zoomIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  pointer-events: none;
+} */
+
+/* 💬 Подсказка */
+/* .tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.imageWrapper:hover .tooltip {
+  opacity: 1;
+}
+
+.info {
+  padding: 16px;
+  text-align: center;
+}
+
+.item_descr {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e0a100;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c48800;
+} */
+
+/* Сетка карточек */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-right: -25px;
+  margin-bottom: -25px;
+}
+
+
+.item {
+   margin-right: 25px;
+  margin-bottom: 25px;
+  width: calc((100% - 85px) / 3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #dfe4ea, #ced6e0);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--hero-color);
+}
+
+
+.imageWrapper {
+  overflow: hidden;
+    position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+
+.img {
+  transition: transform 0.8s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img:hover{
+    transform: scale(1.05);
+}
+
+
+.info {
+  background-color: var(--secondary-color);
+  padding: 16px;
+cursor: auto;
+}
+
+
+.item_descr {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 0;
+  font-weight: 500;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color:  var(--accent-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.8s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.button:hover {
+    background-color: #c97b05;
+}
+
+/* 🔍 Иконка */
+.zoomIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border-radius: 50%;
+  /* font-size: 16px; */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  pointer-events: none;
+}
+
+/* 💬 Подсказка */
+/* .tooltip {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+} */
+
+/* .item:hover .tooltip {
+  opacity: 1;
+} */
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalImage {
+  max-width: 90%;
+  max-height: 90%;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+/* .img:hover{
+
+transform: scale(2);
+  transform-origin: center center;
+transition: all 0.8s ease;
+} */
+
+.item_descr{
+    font-size: 2rem;
+}

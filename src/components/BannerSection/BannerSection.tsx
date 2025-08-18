@@ -10,8 +10,8 @@ const BannerSection = () => {
     <>
       <div className={styles.banner_container}>
         <Container>
-          <h1 className={styles.banner_title}>Aluminium</h1>
-          <h2 className={styles.banner_content}>{t("banner_content")}</h2>
+          <h1 className={styles.banner_title}>Alefmet</h1>
+          {/* <h2 className={styles.banner_content}>{t("banner_content")}</h2> */}
         </Container>
       </div>
     </>

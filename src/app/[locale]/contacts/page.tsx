@@ -25,41 +25,51 @@ const Contacts = () => {
 
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Image
-              src={phone}
-              alt="phone"
-              width={100}
-              height={100}
-              className={styles.tel}
-            />
-            <p className={styles.item_title}>{t("tel")}</p>
-            <p>+38022-121-22-22</p>
+            <a href="tel:+380977786507" target="blank">
+              <Image
+                src={phone}
+                alt="phone"
+                width={100}
+                height={100}
+                className={styles.tel}
+              />
+              <p className={styles.item_title}>{t("tel")}</p>
+              <p>+38(097)778-65-07</p>
+            </a>
           </li>
           <li className={styles.item}>
-            <Image
-              src={email}
-              alt="email"
-              width={100}
-              height={100}
-              className={styles.email}
-            />
-            <p className={styles.item_title}>{t("email")}</p>
-            <p>ere brertrt rtr rtr rtrt </p>
+            <a
+              href="mailto:dimaglagolev2008@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={email}
+                alt="email"
+                width={100}
+                height={100}
+                className={styles.email}
+              />
+              <p className={styles.item_title}>{t("email")}</p>
+              <p>dimaglagolev2008@gmail.com</p>
+            </a>
           </li>
           <li className={styles.item}>
-            <Image
-              src={address}
-              alt="address"
-              width={80}
-              height={90}
-              className={styles.address}
-            />
-            <p className={styles.item_title}>{t("address_title")}</p>
-            <p>{t("address")}</p>
+            <a href='#map' target="blank">
+              <Image
+                src={address}
+                alt="address"
+                width={80}
+                height={90}
+                className={styles.address}
+              />
+              <p className={styles.item_title}>{t("address_title")}</p>
+              <p>{t("address")}</p>
+            </a>
           </li>
         </ul>
       </Container>
-      <div className={styles.map}>
+      <div className={styles.map} id="map">
         <Map />
       </div>
     </div>

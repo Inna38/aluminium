@@ -1,3 +1,6 @@
+import img1 from "../products/photo_2025-08-13_20-32-11.jpg";
+import img2 from "../products/photo_2025-08-13_20-32-13.jpg";
+
 import ADC12 from "../products/ADC12.png";
 import AK12 from "../products/AK12.png";
 import ENAB47100DIN231 from "../products/ENAB-47100DIN231.png";
@@ -10,11 +13,45 @@ import АК8М3 from "../products/АК8М3.png";
 import АК9 from "../products/АК9.png";
 import АК9ч from "../products/АК9ч.png";
 
-
-
 export const products = [
   {
-    img: ADC12,
+    img: [img1, img2],
+    title: "test",
+    slug: "test",
+    description:
+      "test ---- — популярний алюмінієвий сплав з високим вмістом кремнію і цинку, широко використовується в литі під тиском завдяки чудовій текучості та стабільним механічним властивостям.",
+    // specs: {
+    //   Щільність: "2.74 г/см³",
+    //   "Температура плавлення": "570–580 °C",
+    //   "Міцність на розрив": "320 МПа",
+    //   Твердість: "HB 80",
+    // },
+    // features: {
+    //   Тип: "Алюмінієвий ливарний сплав",
+    //   "Позначення (JIS)": "ADC12",
+    //   "Основні легуючі елементи": [
+    //     "Кремній (Si) ~ 10%",
+    //     "Цинк (Zn), Мідь (Cu), Залізо (Fe)",
+    //   ],
+    //   "Метод обробки": "Лиття під тиском",
+    //   "Питома вага": "2.74 г/см³",
+    // },
+    // advantages: [
+    //   "Хороша текучість",
+    //   "Низька усадка при литті",
+    //   "Добрі механічні властивості",
+    //   "Економічна ефективність",
+    // ],
+    // applications: [
+    //   "Корпуси двигунів",
+    //   "Автомобільні деталі",
+    //   "Побутова техніка",
+    //   "Деталі зі складною геометрією",
+    // ],
+  },
+
+  {
+    img: [ADC12],
     title: "ADC12",
     slug: "adc12",
     description:
@@ -50,7 +87,7 @@ export const products = [
   },
 
   {
-    img: AK12,
+    img: [AK12],
     title: "АК12",
     slug: "ak12",
     description:
@@ -83,7 +120,7 @@ export const products = [
   },
 
   {
-    img: ENAB47100DIN231,
+    img: [ENAB47100DIN231],
     title: "EN AB-47100 / DIN 231",
     slug: "enab-47100",
     description:
@@ -114,7 +151,7 @@ export const products = [
   },
 
   {
-    img: ENAB46000DIN226,
+    img: [ENAB46000DIN226],
     title: "EN AB-46000 / DIN 226",
     slug: "enab-46000",
     description:
@@ -143,7 +180,7 @@ export const products = [
     ],
   },
   {
-    img: АК12М2,
+    img: [АК12М2],
     title: "АК12М2",
     slug: "ak12m2",
     description:
@@ -185,7 +222,7 @@ export const products = [
     ],
   },
   {
-    img: АК5М,
+    img: [АК5М],
     title: "АК5М",
     slug: "ak5m",
     description:
@@ -210,7 +247,7 @@ export const products = [
     applications: ["Шестерні", "Підшипники ковзання", "Корпуси редукторів"],
   },
   {
-    img: АК7,
+    img: [АК7],
     title: "АК7",
     slug: "ak7",
     description:
@@ -242,7 +279,7 @@ export const products = [
     ],
   },
   {
-    img: АК7п,
+    img: [АК7п],
     title: "АК7п",
     slug: "ak7p",
     description:
@@ -271,7 +308,7 @@ export const products = [
     ],
   },
   {
-    img: АК8М3,
+    img: [АК8М3],
     title: "АК8М3",
     slug: "ak8m3",
     description:
@@ -300,7 +337,7 @@ export const products = [
     ],
   },
   {
-    img: АК9,
+    img: [АК9],
     title: "АК9",
     slug: "ak9",
     description:
@@ -320,7 +357,7 @@ export const products = [
     applications: ["Кришки та корпуси", "Панелі", "Декоративні елементи"],
   },
   {
-    img: АК9ч,
+    img: [АК9ч],
     title: "АК9ч",
     slug: "ak9ch",
     description:

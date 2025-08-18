@@ -51,11 +51,9 @@ const AboutPage = () => {
           //   fill
           className={styles.img}
         />
-        <div>
+        <div className={styles.content_container}>
           <p className={styles.img_content}>{t("export")}</p>
-          <p className={styles.img_content_decr}>
-            {t("title")}
-          </p>
+          <p className={styles.img_content_decr}>{t("title")}</p>
         </div>
       </div>
     </div>

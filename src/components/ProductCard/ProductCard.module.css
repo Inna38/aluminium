@@ -1,6 +1,6 @@
 .card {
-  max-width: 900px;
-  padding: 24px;
+  max-width: 80%;
+  /* padding: 24px; */
   /* background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08); */
@@ -18,16 +18,22 @@
   text-align: center;
 }
 
-.imageWrapper {
+/* .imageWrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
+} */
+
+.imageWrapper {
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
 }
 
+
 .imageWrapper img{
-width: 60%;
-height: 300px;
-/* width: 100%; */
+width: 100%;
+height: 380px;
 object-fit: cover;
 border-radius: 5px;
 }
@@ -107,16 +113,51 @@ border-radius: 5px;
   color:  var(--accent-color);
 }
 
+@media screen and (max-width: 1024px) {
+ .imageWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+}
 
-@media screen and (max-width:740px) {
-  .imageWrapper img{
-     width: 90%;
+@media screen and (max-width: 950px) {
+  .card{
+    margin-top: -120px;
    }
 }
 
-@media screen and (max-width:540px) {
-  .imageWrapper img{
-        width: 100%;
-   height: 250px;
+@media screen and (max-width:765px) {
+  .card{
+  margin-top: -100px;
+ }
+ .imageWrapper {
+  width: 100%;
+}
+ .imageWrapper img{
+    width: 100%;
    }
+}
+
+@media screen and (max-width:740px) {
+ .table th,
+ .table td {
+  font-size: 2rem;
+}
+
+}
+
+@media screen and (max-width:540px) {
+.card {
+  max-width: 100%;
+}
+}
+
+@media (max-width: 380px){
+.imageWrapper {
+  height: 300px;
+}
+
+.imageWrapper img{
+height: 250px;
+}
 }

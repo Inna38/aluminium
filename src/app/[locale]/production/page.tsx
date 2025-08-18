@@ -27,7 +27,7 @@ export default function Production() {
               Сучасні технології, автоматизація процесів і контроль якості на
               кожному етапі.
             </p>
-            <div className={styles.bannerImage}>
+            {/* <div className={styles.bannerImage}>
               <Image
                 src=""
                 alt="Виробництво алюмінію"
@@ -35,6 +35,21 @@ export default function Production() {
                 height={500}
                 priority
                 className={styles.img}
+              />
+            </div> */}
+          </section>
+
+          <section className={styles.section}>
+            <h2>Відео з виробництва</h2>
+            <div className={styles.videoWrapper}>
+              <video
+                src="/video_2025.mp4"
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                className={styles.video}
               />
             </div>
           </section>
@@ -114,17 +129,6 @@ export default function Production() {
                 height={400}
                 className={styles.img}
               />
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>Відео з виробництва</h2>
-            <div className={styles.videoWrapper}>
-              <iframe
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="Відео виробництва"
-                allowFullScreen
-              ></iframe>
             </div>
           </section>
         </main>

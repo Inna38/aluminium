@@ -37,7 +37,7 @@ export default function ProductsPage() {
                 onClick={() => handleImageClick(img as unknown as string)}
               >
                 <Image
-                  src={img}
+                  src={img[0]}
                   alt={title}
                   width={300}
                   height={300}
@@ -65,39 +65,13 @@ export default function ProductsPage() {
                 </Link>
               </div>
             </li>
-            // <li
-            //   key={title}
-            //   className={styles.item}
-            //   style={{ cursor: "zoom-in" }}
-            // >
-            //   <div className={styles.imageWrapper}>
-            //     <Image
-            //       src={img}
-            //       alt={title}
-            //       width={300}
-            //       height={300}
-            //       className={styles.img}
-            //       onClick={() => handleImageClick(img as unknown as string)}
-            //     />
-            //   </div>
-            //   <div className={styles.info}>
-            //     <p className={styles.item_descr}>{title}</p>
-
-            //     <Link
-            //       href={`/${local}/products/${slug}`}
-            //       className={styles.button}
-            //     >
-            //       {local === "ua" ? "Детальніше" : "More details"}
-            //     </Link>
-            //   </div>
-            // </li>
           ))}
         </ul>
       </Container>
       {isOpen && activeImage && (
         <div className={styles.modalOverlay} onClick={closeModal}>
           <Image
-            src={activeImage}
+            src={activeImage[0]}
             alt="Zoomed image"
             width={800}
             height={800}

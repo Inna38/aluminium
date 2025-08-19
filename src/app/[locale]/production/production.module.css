@@ -68,3 +68,17 @@ margin-top: -140px;
 .img{
   background-color: darkgray;
 }
+
+@media (max-width: 764px){
+.video {
+  width: 60%;
+  height: 500px;
+}
+}
+
+@media (max-width: 500px){
+.video {
+  width: 100%;
+  height: 600px;
+}
+}

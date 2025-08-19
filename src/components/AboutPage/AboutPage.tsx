@@ -13,33 +13,91 @@ const AboutPage = () => {
     <div className={styles.about_container}>
       <Container>
         <div className={styles.content}>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-            corrupti iure nostrum saepe animi itaque, quasi ab labore,
-            repellendus exercitationem molestias ex quis adipisci, ipsam
-            excepturi nobis doloribus similique! Saepe debitis, fugit sint sunt
-            at officiis. Nostrum cumque architecto saepe a, ad consectetur
-            laborum, explicabo voluptatum dignissimos veniam unde! Nam voluptate
-            fugit cumque, officiis repellendus recusandae hic veniam, corporis,
-            possimus ea omnis? Accusantium explicabo asperiores commodi iste
-            minima totam blanditiis, dolore eveniet tenetur. Est neque sunt
-            quasi atque incidunt nam id perspiciatis animi et quidem voluptates
-            consequatur tempore placeat, repudiandae vero accusamus dolorem ad
-            mollitia quod voluptas blanditiis! Cum doloribus tempore a nihil
-            iusto adipisci quaerat, numquam sint temporibus molestiae
-            repellendus, cupiditate dolorum minima nobis earum enim. Accusantium
-            minus, officiis labore inventore hic delectus voluptatem ad. Enim
-            laborum voluptatibus ratione dolore qui. Eveniet laudantium non
-            officia natus nulla! Corporis quis cupiditate ex dolore quas ipsam
-            voluptatum dignissimos dicta incidunt! Provident facilis aliquid
-            itaque soluta corrupti! Sed eveniet magni deleniti repellat
-            quibusdam temporibus, voluptate esse dicta id architecto aut
-            blanditiis laborum porro reiciendis quis quidem aperiam praesentium
-            reprehenderit error asperiores at. Commodi inventore soluta
-            doloremque at, molestias ab maiores, expedita odio nulla iure
-            recusandae quisquam illum architecto assumenda accusantium laborum
-            atque!
-          </p>
+          <section className={`${styles.intro} ${styles.section}`}>
+            <p>
+              ТОВ «Алефмет» — Алюміній, що працює на результат. <br /> Надійний
+              партнер для промисловості Ми не просто переплавляємо метал — ми
+              створюємо якісну сировину для сильних брендів, які щодня рухають
+              світ уперед.
+            </p>
+            <p>
+              ТОВ «Алефмет» — це сучасне підприємство, що спеціалізується на
+              виробництві вторинних алюмінієвих сплавів для промислового
+              використання.
+            </p>
+          </section>
+
+          <section className={`${styles.industries} ${styles.section}`}>
+            <p>
+              Наша продукція — основа надійності у машинобудуванні,
+              автомобільній промисловості, будівництві та електротехніці.
+            </p>
+          </section>
+
+          <section className={`${styles.features} ${styles.section}`}>
+            <h3 className={styles.title}>
+              🚀 Ми допомагаємо бізнесу масштабуватись
+            </h3>
+            <ul className={styles.list}>
+              <li>
+                &ensp; Власні плавильні комплекси потужністю 1000+ тонн/місяць
+              </li>
+              <li>&ensp;Виробництво під індивідуальні технічні вимоги</li>
+              <li>&ensp; Продукція у форматі зливків і гранул різних фракцій</li>
+              <li>&ensp;
+                Повна відповідність міжнародним стандартам: EN, ISO, ASTM.
+                {/* <p>
+                  Ми постачаємо не просто метал — ми постачаємо результат, який
+                  відповідає вашим очікуванням по хімічному складу, якості,
+                  термінам і упаковці.
+                </p> */}
+              </li>
+            </ul>
+          </section>
+
+          <section className={`${styles.ecology} ${styles.section}`}>
+            <h3 className={styles.title}>♻️ Екологія — частина нашої ДНК</h3>
+            <p>
+              Наш процес переробки вторинного алюмінію — це не лише
+              ефективність, а й відповідальність. Ми зменшуємо викиди CO₂,
+              зберігаємо ресурси та допомагаємо партнерам реалізовувати
+              стратегії сталого розвитку (ESG).
+            </p>
+          </section>
+
+          <section className={`${styles.international} ${styles.section}`}>
+            <h3 className={styles.title}>🌐 Міжнародний фокус</h3>
+            <p>
+              ТОВ «Алефмет» працює з клієнтами з країн ЄС, Близького Сходу та
+              Азії. Ми знаємо, що таке логістика без стресу, повний пакет
+              експортної документації, гнучкі умови контрактів і надійні
+              терміни.
+            </p>
+          </section>
+
+          <section className={`${styles.partners} ${styles.section}`}>
+            <h3 className={styles.title}>
+              🤝 Долучайтеся до партнерства. Ми відкриті до співпраці з:
+            </h3>
+            <ul className={styles.list}>
+              <li>&ensp;Заводами та промисловими підприємствами</li>
+              <li>&ensp;Міжнародними закупівельниками</li>
+              <li>&ensp;Металотрейдерами</li>
+              <li>&ensp;Контрактними виробниками та експортерами</li>
+            </ul>
+          </section>
+
+          <section className={`${styles.benefits} ${styles.section}`}>
+            <h3 className={styles.title}>
+              🔧 Ми — ваші люди, якщо вам потрібно:
+            </h3>
+            <ul className={styles.list}>
+              <li>&ensp;Якісно</li>
+              <li>&ensp;Швидко</li>
+              <li>&ensp;З гарантією</li>
+              <li>&ensp;Без зайвого клопоту</li>
+            </ul>
+          </section>
         </div>
       </Container>
       <div className={styles.img_container}>
